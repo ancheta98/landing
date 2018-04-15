@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <!-- <meta name="author" content="Script Tutorials" /> -->
+  <title>Money tree</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- attach CSS styles -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/style.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="C:\Coding Dojo Class\MEAN\test\test.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    $(Document).ready(function(){
+        $('#green').hide();
+        $('h6').hide();
+        $("#join").mouseenter(function(){
+                $("#join").fadeTo("fast", 1);
+        })
+        $("#join").mouseleave(function(){
+                $("#join").fadeTo("fast", 0.5);
+        })
+        $("#bottom").mouseenter(function(){
+                $("#fun").attr("style", "color: #ff3399; letter-spacing: 15px");
+        })
+        $("#bottom").mouseleave(function(){
+                $("#fun").attr("style", "color: white");
+        })
+        $("#join").mouseenter(function(){
+                $("#green").fadeIn('fast');
+        })
+        $("#join").mouseleave(function(){
+                $("#green").fadeOut('slow');
+        })
+        $(".hometext").mouseenter(function(){
+                $("#death").attr("style", "color: red; letter-spacing: 15px");
+                $('h6').fadeIn('fast');
+        })
+        $(".hometext").mouseleave(function(){
+                $("#death").attr("style", "color: white; letter-spacing: 15px");
+                $('h6').fadeOut('slow');
+        })
+
+    })
+
+
+    </script>
+</head>
+<body>
+  <!--  BODY PAGE CONTENT -->
+  <!-- first section - Home -->
+<!-- <main class="wrapper"> -->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <div id="home" class="home">
+        <div class="text-vcenter">
+        <h1 class="hometext">MoneyTrees</h1>
+        <h3 class="hometext">Finance sounds like <span id="death">death</span></h3>
+        <h6 class="hometext">:(</h6>
+        </div>
+    </div>
+        <!-- <section id="home" class="section parallax bg1 text-vcenter">
+            <div class="text-vcenter">
+                <h1 class="hometext">MoneyTrees</h1>
+                <h3 class="hometext">The place to go to make money</h3>
+            </div>
+        </section> -->
+
+  <!-- /first section -->
+<!-- third section - Services -->
+<!-- <div id="services" class="pad-section">
+    <div class="container">
+        <h2 class="text-center">Our Goal</h2> <hr />
+        <div class="text-center">
+            <h5>We want to help you make money.</h5>
+        </div>
+    </div>
+</div> -->
+    <!-- /third section -->
+<!-- footer -->
+    <div id="bottom" class="pad-section">
+        <div class="container">
+            <div class="col-sm-12 text-center" id="goal">
+                <h3>Let's make it <span id="fun">fun</span></h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="join" class="col-sm-12 text-center">
+                    <!-- <h1>Want to learn More?</h1> -->
+                    <h3><a href="#">Click here to learn more!</a></h3>
+                    <!-- <h3><a[routerLink]="['TheBuffet']">Click to see how!</a></h3> -->
+                </div>
+                <div id="green" class="col-sm-12 text-center">
+                    <h3>$$$</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+</body>
+</html>
